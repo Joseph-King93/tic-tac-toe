@@ -65,3 +65,15 @@ h1 {
     grid-column: 3;
     grid-row: 3;
 }
+
+.player1, .player2 {
+    font-size: 40px;
+}
+
+.playerX {
+    background-color: red;
+}
+
+.playerO {
+    background-color: red;
+}
