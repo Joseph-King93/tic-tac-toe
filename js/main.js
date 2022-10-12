@@ -236,7 +236,7 @@ function winCheckTotal (event) {
 function gameEvents(event) {
     if (event.target.innerText === ".") {
         event.target.innerText = (playerTurnIs);
- 
+        
         winCheckTotal(event);
         // checkDraw();
         if (playerTurnIs === "X") {
@@ -279,12 +279,16 @@ function resetBoard () {
 //    const newTileArray = newTileArray.push[i]
 // }
 
-// [1,2,3,4,5,6,7,8,9]
-
+// // [1,2,3,4,5,6,7,8,9]
+// === array in qustion[values]
 // row win conditions
-// R[1,2,3]
-// R[4,5,6]
-// R[7,8,9]
+// let winRowArray = [ 
+//  [1,2,3],
+//  [4,5,6], 
+//  [7,8,9]
+// ]
+
+// winRowArray[0] === ['X', 'X', 'X'] || ['O', 'O', 'O'] , winRowArray[1], winRowArray[2]
 
 // column win conditions
 // C[1,4,7]
@@ -294,3 +298,16 @@ function resetBoard () {
 // Diagonal win conditions
 // D[1,5,9]
 // D[3,5,7
+
+
+// let minutes =  27
+// let hour = 5
+// let time = hour + ":" + minutes
+// let breakTotal = 15
+// function comeFromBreak(breakTotal) {
+//      minutes = minutes + breakTotal;
+//      time = hour + ":" + minutes;
+//      alert("Break is over at " + time);
+// }
+
+// comeFromBreak(breakTotal)
